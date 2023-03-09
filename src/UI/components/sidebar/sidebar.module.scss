@@ -1,0 +1,20 @@
+// @use 'styles/imports' as *;
+
+.sidebar {
+	background: #fff;
+	display: block;
+	position: fixed;
+	width: 230px;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	top: 0;
+	z-index: 10;
+	box-shadow: 0 0 30px rgba(250, 106, 174, 0.05);
+	transition-property: all;
+	transition-duration: 400ms;
+	transition-timing-function: ease;
+	&-closed {
+		width: 4.8rem;
+	}
+}
