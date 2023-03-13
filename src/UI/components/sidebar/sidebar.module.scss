@@ -1,20 +1,11 @@
 // @use 'styles/imports' as *;
 
 .sidebar {
-	background: #fff;
-	display: block;
-	position: fixed;
-	width: 230px;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	top: 0;
-	z-index: 10;
 	box-shadow: 0 0 30px rgba(250, 106, 174, 0.05);
-	transition-property: all;
-	transition-duration: 400ms;
-	transition-timing-function: ease;
+	@apply transition-all duration-[400ms] ease-in w-[230px] fixed bg-[#fff] h-screen	 justify-center top-0  z-20;
+
 	&-closed {
 		width: 4.8rem;
+		@apply hidden md:block;
 	}
 }

@@ -1,0 +1,23 @@
+.header {
+	@apply border-b-2 border-borderColor h-fit w-full mb-2 px-4  py-[1.125rem] flex items-center justify-start relative;
+
+	&__logo {
+		@apply w-[26.25px] h-[26.25px];
+	}
+	&__title {
+		margin-inline-start: 1rem;
+		@apply absolute left-[2.4rem] transition-all duration-[400ms] ease-in;
+
+		&-open {
+			@apply absolute left-[-200px];
+		}
+	}
+	&__toggle {
+		box-shadow: 0 0.125rem 0.25rem rgb(112 22 208 / 10%);
+		@apply absolute top-[16px] right-[-12px] cursor-pointer bg-primary text-[#fff] p-2 rounded-3xl w-fit;
+
+		&-open {
+			@apply rotate-180;
+		}
+	}
+}

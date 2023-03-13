@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.scss';
 import './styles/index.scss';
 import { Sidebar } from './UI/components';
+import { Route, Router, Routes } from 'react-router-dom';
 
 
 function App() {
@@ -11,6 +12,11 @@ function App() {
       <header className="App-header">
       </header>
       <Sidebar />
+      {/* <Router location={''} navigator={} >
+        <Routes>
+          
+        </Routes>
+      </Router> */}
     </div>
   );
 }
