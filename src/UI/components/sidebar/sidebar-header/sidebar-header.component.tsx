@@ -17,7 +17,7 @@ export const SidebarHeader: React.FC<Props> = ({ setCloseNav, isClosedNav }) => 
                     className=''
                 />
             </div>
-            <h1 className={`${styles['header__title']} ${isClosedNav ? styles['header__title-open'] : ''}`}>title title</h1>
+            <h1 className={`${styles['header__title']} ${isClosedNav ? styles['header__title-open'] : ''}`}>Qompac UI</h1>
 
             <div className={`${styles['header__toggle']} ${isClosedNav ? styles['header__toggle-open'] : ''}`} onClick={() => setCloseNav(!isClosedNav)}>
                 <img

@@ -13,6 +13,14 @@ module.exports = {
 					'Courier New',
 					'monospace',
 				],
+				header: [
+					'Heebo',
+					'sans-serif',
+					'Apple Color Emoji',
+					'Segoe UI Emoji',
+					'Segoe UI Symbol',
+					'Noto Color Emoji',
+				],
 			},
 		},
 		colors: {
@@ -22,6 +30,7 @@ module.exports = {
 			secondary: '#cfc6c6',
 			// borderColor: '#eee',
 			borderColor: '#f1f1f1',
+			textColor: '#161D2B',
 			'primary-shade-80': ' #321522',
 			'primary-shade-60': ' #642a45',
 			'primary-shade-40': ' #963f68',

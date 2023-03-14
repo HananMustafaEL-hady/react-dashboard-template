@@ -6,4 +6,20 @@
 	body {
 		@apply bg-bodyBackground;
 	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply font-header;
+	}
 }
+
+#sidebar .active {
+	@apply bg-primary text-[#fff];
+}
+
+// #sidebar a {
+// 	@apply px-[1rem] py-[.5rem];
+// }
