@@ -31,6 +31,7 @@ module.exports = {
 			// borderColor: '#eee',
 			borderColor: '#f1f1f1',
 			textColor: '#161D2B',
+			link: '#6d6d6d',
 			'primary-shade-80': ' #321522',
 			'primary-shade-60': ' #642a45',
 			'primary-shade-40': ' #963f68',
