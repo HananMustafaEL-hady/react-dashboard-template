@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACL,MAAM,CAAN,2NAAM;CAKN;;AAHC,AAAD,UAAM,CAAC;EACN,MAAM,CAAN,iCAAM;CACN",
+    "sources": [
+        "nav-notifications.module.scss"
+    ],
+    "names": [],
+    "file": "nav-notifications.module.css"
+}

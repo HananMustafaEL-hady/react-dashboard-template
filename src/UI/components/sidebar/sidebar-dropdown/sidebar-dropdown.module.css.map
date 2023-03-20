@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACE,AAAD,YAAQ,CAAC;EACR,MAAM,CAAN,8GAAM;CAiBN;;AAfC,AAAD,iBAAM,CAAC;EACN,MAAM,CAAN,+EAAM;CAIN;;AAHC,AAAD,uBAAO,CAAC;EACP,MAAM,CAAN,SAAM;CACN;;AAED,AAAD,qBAAU,CAAC;EACV,MAAM,CAAN,wHAAM;CACN;;AACA,AAAD,qBAAU,CAAC;EACV,MAAM,CAAN,SAAM;CAIN;;AAHC,AAAD,2BAAO,CAAC;EACP,MAAM,CAAN,SAAM;CACN",
+    "sources": [
+        "sidebar-dropdown.module.scss"
+    ],
+    "names": [],
+    "file": "sidebar-dropdown.module.css"
+}

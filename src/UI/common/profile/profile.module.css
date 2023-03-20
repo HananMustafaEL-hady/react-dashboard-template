@@ -1,0 +1,24 @@
+.profile {
+  @apply flex  items-center justify-center;
+}
+
+.profile__img {
+  @apply h-[3.125rem] w-[3.125rem] rounded-full;
+}
+
+.profile__name {
+  @apply mb-0 text-sm font-bold text-[#181818];
+}
+
+.profile__link {
+  @apply text-link text-sm font-medium cursor-pointer;
+}
+
+.profile__link__wrapper {
+  @apply flex justify-between w-full items-center;
+}
+
+.profile__date {
+  @apply text-[10px] mb-0;
+}
+/*# sourceMappingURL=profile.module.css.map */

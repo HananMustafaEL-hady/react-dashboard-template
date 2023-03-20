@@ -3,8 +3,12 @@ import { LogoIcon } from '../../icons';
 import { SidebarHeader, SidebarDropdown, SidebarItem, SidebarListGroup } from '../index';
 import styles from './sidebar.module.scss';
 
-export const Sidebar = () => {
-    const [isClosedNav, setCloseNav] = useState(false)
+interface Props {
+    isClosedNav: boolean
+    setCloseNav: React.Dispatch<React.SetStateAction<boolean>>
+
+}
+export const Sidebar: React.FC<Props> = ({ isClosedNav, setCloseNav }) => {
     return (
         <div className={`${styles['sidebar']} ${isClosedNav ? styles['sidebar-closed'] : ''}`}>
             <SidebarHeader isClosedNav={isClosedNav} setCloseNav={setCloseNav} />

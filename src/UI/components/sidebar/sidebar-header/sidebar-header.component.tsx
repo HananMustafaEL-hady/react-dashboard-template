@@ -8,8 +8,7 @@ interface Props {
 
 export const SidebarHeader: React.FC<Props> = ({ setCloseNav, isClosedNav }) => {
     return (
-        <div className={`${styles['header']}`}>
-            {/* logo */}
+        <div className={`${styles['header']} ${isClosedNav ? styles['header-open'] : ''}`}>
             <div className={`${styles['header__logo']}`}>
                 <img
                     src={`/images/logo.svg`}

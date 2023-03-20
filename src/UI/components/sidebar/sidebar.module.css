@@ -1,0 +1,11 @@
+.sidebar {
+  -webkit-box-shadow: 0 0 30px rgba(250, 106, 174, 0.05);
+          box-shadow: 0 0 30px rgba(250, 106, 174, 0.05);
+  @apply transition-all duration-[400ms] ease-in w-[230px] fixed bg-[#fff] h-screen	 justify-center top-0  z-20;
+}
+
+.sidebar-closed {
+  width: 4.8rem;
+  @apply hidden md:block;
+}
+/*# sourceMappingURL=sidebar.module.css.map */

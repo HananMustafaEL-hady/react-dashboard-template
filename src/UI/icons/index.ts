@@ -1,2 +1,13 @@
+export { default as BitcoinIcon } from "./bitcoin-icon";
+export { default as CloseFullScreenIcon } from "./close-full-screen-icon";
+export { default as DarkModeIcon } from "./dark-mode-icon";
 export { default as DropdownArrowIcon } from "./dropdown-arrow-icon";
+export { default as ElementsIcon } from "./elements-icon";
+export { default as FullScreenIcon } from "./full-screen-icon";
+export { default as HomeIcon } from "./home-icon";
+export { default as LanguesDropIcon } from "./langues-drop-icon";
 export { default as LogoIcon } from "./logo-icon";
+export { default as ModeDropIcon } from "./mode-drop-icon";
+export { default as NotificationDropIcon } from "./notification-drop-icon";
+export { default as PagesIcon } from "./pages-icon";
+export { default as SearchDropIcon } from "./search-drop-icon";

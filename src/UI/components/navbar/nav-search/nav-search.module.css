@@ -1,0 +1,8 @@
+.list {
+  @apply absolute rounded-[4px] overflow-hidden 	 text-dropdownColor top-[132%] left-[-245px] bg-[#fff] min-w-[300px] invisible translate-y-4 opacity-0 transition-all duration-[400ms] ease-linear;
+}
+
+.list-show {
+  @apply visible translate-y-0 opacity-100;
+}
+/*# sourceMappingURL=nav-search.module.css.map */

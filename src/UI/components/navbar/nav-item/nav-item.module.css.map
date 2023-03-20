@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACL,MAAM,CAAN,uKAAM;CAKN;;AAHC,AAAD,WAAO,CAAC;EACP,MAAM,CAAN,eAAM;CACN",
+    "sources": [
+        "nav-item.module.scss"
+    ],
+    "names": [],
+    "file": "nav-item.module.css"
+}

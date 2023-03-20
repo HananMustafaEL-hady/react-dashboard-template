@@ -10,7 +10,7 @@ interface Props {
 
 export const NavItem: React.FC<Props> = ({ link, name, icon }) => {
 	return (
-		<NavLink to={`/${link}`} className={`${styles['link']}`}>
+		<NavLink to={`${link}`} className={`${styles['link']}`}>
 			<div className={`${styles['link__icon']}`}>{icon}</div>
 			<span className={`${styles['link__text']}`}>{name}</span>
 		</NavLink>

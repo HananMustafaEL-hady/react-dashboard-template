@@ -1,0 +1,8 @@
+.nav {
+  @apply bg-[#fff] md:ml-[230px] transition-all duration-[400ms] ease-in px-4 mb-8;
+}
+
+.nav-closeSide {
+  @apply md:ml-[4.5rem];
+}
+/*# sourceMappingURL=navbar.module.css.map */

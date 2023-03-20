@@ -1,0 +1,14 @@
+.list__title {
+  @apply text-textColor mt-2 uppercase text-sm tracking-[.18rem] font-normal leading-[21px] px-[14px] py-[7px];
+}
+
+.list__title-close {
+  @apply opacity-0;
+}
+
+.list__hr {
+  @apply bg-opacity-0 border-0  h-[1px] my-[.5rem] opacity-[0.25];
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(0, 0, 0, 0.4)), to(transparent));
+  background-image: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.4), transparent);
+}
+/*# sourceMappingURL=sidebar-list-group.module.css.map */
