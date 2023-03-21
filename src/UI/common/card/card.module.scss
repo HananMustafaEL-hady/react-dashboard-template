@@ -1,0 +1,11 @@
+.card {
+	&__header {
+		@apply p-[1.5rem]  border-b border-borderBottomColor rounded flex items-center justify-between;
+		&__title {
+			@apply font-bold text-xl;
+		}
+	}
+	&__body {
+		@apply p-[1.5rem];
+	}
+}

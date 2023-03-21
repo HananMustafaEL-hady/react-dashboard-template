@@ -17,7 +17,7 @@ export const Navbar: React.FC<Props> = ({ isClosedNav, setCloseNav }) => {
 		<div>
 			<nav className={`${styles['nav']} ${isClosedNav ? styles['nav-closeSide'] : ''}`} id="nav">
 				<div className="flex items-center justify-between h-16">
-					<div className="md:flex  w-full hidden ">
+					<div className="lg:flex  w-full hidden ">
 						<div className='flex items-center justify-between w-full'>
 							<div className=" flex items-center ">
 								<h3 className='mb-0 mx-1 pr-3 text-[10px] border-r border-borderBottomColor'>Home</h3>
@@ -44,7 +44,7 @@ export const Navbar: React.FC<Props> = ({ isClosedNav, setCloseNav }) => {
 						</div>
 					</div>
 
-					<div className="mr-2 flex md:hidden">
+					<div className="mr-2 flex lg:hidden">
 						<button
 							onClick={() => setIsOpen(!isOpen)}
 							type="button"
@@ -101,7 +101,7 @@ export const Navbar: React.FC<Props> = ({ isClosedNav, setCloseNav }) => {
 					leaveTo="opacity-0 scale-95"
 				>
 					{(ref) => (
-						<div className="md:hidden" id="mobile-menu">
+						<div className="lg:hidden" id="mobile-menu">
 							<div
 								ref={ref}
 								className="px-2 pt-2 pb-3 space-y-1 sm:px-3"

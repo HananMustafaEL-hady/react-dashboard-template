@@ -1,0 +1,39 @@
+.btn {
+	@apply w-full bg-primary/95 px-2 py-1 rounded text-[#fff] flex justify-center items-center font-semibold text-sm hover:bg-primary capitalize;
+
+	@each $name, $color in $theme-colors {
+		&-#{$name} {
+			background-color: transparentize($color, 0.1);
+
+			&:focus {
+				box-shadow: 0 0 0 0.25rem transparentize($color, 0.5);
+			}
+
+			&:hover {
+				background-color: $color;
+				@if ($name== 'warning') {
+					color: #000;
+				} @else {
+					color: #fff;
+				}
+			}
+		}
+
+		&-outline-#{$name} {
+			@apply bg-[#fff];
+			border: 1px solid $color;
+			color: $color;
+			&:hover {
+				background-color: $color;
+				@if ($name== 'warning') {
+					color: #000;
+				} @else {
+					color: #fff;
+				}
+			}
+		}
+	}
+	&:disabled {
+		@apply cursor-default opacity-80;
+	}
+}

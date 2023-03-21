@@ -3,6 +3,6 @@ import { StatisticsCard } from '../../common/statistics-card/statistics-card.com
 
 export const StatisticsSection = () => {
     return (
-        <div className='flex justify-between space-x-8 '><StatisticsCard /><StatisticsCard /><StatisticsCard /><StatisticsCard /></div>
+        <div className='columns-1 md:columns-2 lg:columns-4  mb-6'><StatisticsCard /><StatisticsCard /><StatisticsCard /><StatisticsCard /></div>
     )
 }

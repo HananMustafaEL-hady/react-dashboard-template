@@ -1,0 +1,12 @@
+.input-group {
+	@apply mb-3 w-full text-sm	font-normal relative  px-2  flex items-center;
+	&__label {
+		@apply pr-4 border border-borderBottomColor flex-shrink-0 px-[14px] py-[7px];
+		border-inline-end: 0px;
+	}
+	&__input {
+		@apply w-full focus:outline-0 focus:border-primary px-[14px] py-[7px] border border-borderBottomColor rounded;
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+}
