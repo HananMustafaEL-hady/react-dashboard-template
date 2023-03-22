@@ -2,6 +2,7 @@ import React from 'react'
 import { Button } from '../common/button/button.component'
 import { Card } from '../common/card/card.component'
 import { Input } from '../common/input/input.component'
+import { Table } from '../components'
 import { StatisticsSection } from '../components/statistics-section/statistics-section.component'
 
 export const HomePage = () => {
@@ -32,6 +33,11 @@ export const HomePage = () => {
 
 
         </div>
+      </Card>
+
+
+      <Card title='table'>
+        <Table />
       </Card>
     </main>
   )

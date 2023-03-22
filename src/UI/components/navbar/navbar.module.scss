@@ -1,6 +1,9 @@
 .nav {
-	@apply bg-[#fff] md:ml-[230px] transition-all duration-[400ms] ease-in px-4 mb-8;
+	@apply bg-[#fff] lg:ml-[230px] transition-all duration-[400ms] ease-in px-4 mb-8;
 	&-closeSide {
-		@apply md:ml-[4.5rem];
+		@apply lg:ml-[4.5rem];
+	}
+	&__logo {
+		@apply w-[26.25px] h-[26.25px];
 	}
 }

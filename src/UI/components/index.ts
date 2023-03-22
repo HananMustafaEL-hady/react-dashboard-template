@@ -8,3 +8,4 @@ export { NavDropdown } from './navbar/nav-dropdown/nav-dropdown.component'
 export { NavProfile } from "./navbar/nav-profile/nav-profile.component"
 export { NavNotifications } from './navbar/nav-notifications/nav-notifications.component'
 export { NavSearch } from './navbar/nav-search/nav-search.component'
+export { Table } from './table/table.component'

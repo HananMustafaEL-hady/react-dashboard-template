@@ -1,0 +1,27 @@
+$base-spacing-unit: 24px;
+$half-spacing-unit: $base-spacing-unit / 2;
+
+.table {
+	@apply min-w-[1440px] border-y-borderBottomColor  xl:min-w-full;
+	&-header {
+		@apply flex min-w-full bg-bodyBackground text-primary capitalize;
+		padding: ($half-spacing-unit * 1.5) 0;
+	}
+	&-row {
+		@apply flex w-full;
+		padding: ($half-spacing-unit * 1.5) 0;
+		&:nth-of-type(even) {
+			@apply bg-bodyBackground;
+		}
+	}
+	&_wrapper {
+		@apply overflow-x-auto;
+	}
+}
+
+.table-data,
+.header__item {
+	flex: 1 1 20%;
+	text-align: start;
+	@apply px-4;
+}
