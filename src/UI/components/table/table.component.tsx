@@ -1,54 +1,51 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { TableHeader } from '../../common/table-header/table-header.component';
-import axios from "axios"
 import { TableContent } from '../../common/table-content/table-content.component';
+import { Pagination } from '../../common/pagination/pagination.component';
+import { Page } from '../../../models';
 
-export const Table = () => {
-
-    const [data, setData] = useState<any>();
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
-
-    const _renderTableData = (data: any) => {
-        console.log("_renderTableData", data)
-        return <>
-            <div className="table-data">{data?.id}</div>
-            <div className="table-data">{data?.name}</div>
-            <div className="table-data">{data?.phone}</div>
-            <div className="table-data">{data?.website}</div>
-            <div className="table-data">{data?.email}</div>
+interface Props {
+    _renderTableData: (data: any) => JSX.Element;
+    data?: Page<any>;
+    hasPagination: boolean;
+    _setPageChange: (e: { selectedPage: number }) => void;
+    currentPage: number;
 
 
-        </>
+}
+export const Table: React.FC<Props> = ({ _renderTableData, data, hasPagination, _setPageChange, currentPage }) => {
+    console.log("================data============", data)
 
+    const _renderTableInfo = () => {
+        const startNum = currentPage === 1 ? 1 : (currentPage - 1) * data?.limit! + 1;
+        const endNum = currentPage === data?.pageCount ? data?.totalCount : data?.limit! * currentPage;
+
+        return <span>{startNum} to {endNum}</span>
     }
 
-    useEffect(() => {
-        const getData = async () => {
-            try {
-                const response = await axios.get(
-                    `https://jsonplaceholder.typicode.com/users?_limit=10`
-                );
-                setData(response.data);
-                setError(null);
-            } catch (err: any) {
-                setError(err?.message);
-                setData(null);
-            } finally {
-                setLoading(false);
-            }
-        };
-        getData();
-    }, []);
-    console.log("data", data)
-
     return (
-        <div className='table_wrapper'>
-            <div className="table">
-                <TableHeader headerList={["id", "name", "phone", "website", "email"]} />
-                <TableContent _renderTableData={_renderTableData} data={data} />
+        <div className='border border-borderBottomColor'>
+            <div className='table_wrapper'>
+                <div className="table">
+                    <TableHeader headerList={["id", "name", "phone", "website", "email"]} />
+                    <TableContent _renderTableData={_renderTableData} data={data?.data!} />
+                </div>
+            </div>
+            <div className="table__pagination">
+                <div className='table__pagination__info'>
+                    Showing {_renderTableInfo()} of <span>{data?.totalCount}</span> entries
+                </div>
+                {hasPagination && data && data?.data?.length > 0 && (
+                    <Pagination
+                        currentPage={currentPage}
+                        pageCount={data?.pageCount!}
+                        onPageChange={_setPageChange}
+                    />
+                )}
+
             </div>
         </div>
+
 
     )
 }

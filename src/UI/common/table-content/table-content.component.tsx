@@ -2,15 +2,15 @@ import React from 'react'
 
 interface Props {
     _renderTableData: Function;
-    data: object[]
+    data: any[]
 }
 export const TableContent: React.FC<Props> = ({ data, _renderTableData }) => {
     return (
         <div className="table-content">
             {data?.map((item, index) => {
-                return <tr className="table-row" key={index}>
+                return <div className="table-row" key={index}>
                     {_renderTableData(item)}
-                </tr>
+                </div>
             })}
 
         </div>

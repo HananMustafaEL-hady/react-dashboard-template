@@ -2,7 +2,7 @@ $base-spacing-unit: 24px;
 $half-spacing-unit: $base-spacing-unit / 2;
 
 .table {
-	@apply min-w-[1440px] border-y-borderBottomColor  xl:min-w-full;
+	@apply min-w-[1440px]   xl:min-w-full;
 	&-header {
 		@apply flex min-w-full bg-bodyBackground text-primary capitalize;
 		padding: ($half-spacing-unit * 1.5) 0;
@@ -16,6 +16,13 @@ $half-spacing-unit: $base-spacing-unit / 2;
 	}
 	&_wrapper {
 		@apply overflow-x-auto;
+	}
+	&__pagination {
+		@apply flex flex-col justify-center items-center space-y-2 md:space-y-0 md:flex-row md:justify-between w-full  py-4 px-6 border-t border-borderBottomColor;
+
+		&__info {
+			@apply text-sm;
+		}
 	}
 }
 

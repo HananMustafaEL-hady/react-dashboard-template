@@ -1,5 +1,5 @@
 .profile {
-	@apply flex  items-center justify-center pr-2  pl-4 border-l border-borderColor ml-5;
+	@apply flex  items-center justify-center pr-2  pl-4 border-l border-borderColor ml-5 cursor-pointer;
 
 	&__img {
 		@apply h-[3.125rem] w-[3.125rem] rounded-full;
@@ -8,6 +8,6 @@
 		@apply mb-0 text-sm font-bold text-[#181818];
 	}
 	&__link {
-		@apply text-link text-sm font-medium cursor-pointer;
+		@apply text-link text-sm font-medium;
 	}
 }

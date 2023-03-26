@@ -8,7 +8,7 @@ export const NavProfile = () => {
     const { ref: refDrop, isComponentVisible: showDrop, setIsComponentVisible: setShowDrop } = useComponentVisible(false);
 
     return (
-        <div className={`${styles["profile"]}`}>
+        <div className={`${styles["profile"]}`} onClick={() => setShowDrop(!showDrop)} ref={refDrop}>
             <div className="flex-shrink-0 ">
                 <img
                     className={`${styles["profile__img"]}`}
@@ -17,10 +17,13 @@ export const NavProfile = () => {
                 />
             </div>
             <div className="ml-4 relative">
-                <h4 className={`${styles["profile__name"]}`}>
-                    Austin Robertson
-                </h4>
-                <p className={`${styles["profile__link"]}`} onClick={() => setShowDrop(!showDrop)} ref={refDrop}>Marketing Administrator</p>
+                <div className=' hidden md:block'>
+                    <h4 className={`${styles["profile__name"]}`}>
+                        Austin Robertson
+                    </h4>
+                    <p className={`${styles["profile__link"]}`} >Marketing Administrator</p>
+                </div>
+
                 <NavDropdown showDrop={showDrop} >
                     <li><NavLink to="/profile" className={`nav-link`}>profile</NavLink></li>
                     <li><NavLink to="/setting" className={`nav-link`}>privacy setting</NavLink></li>

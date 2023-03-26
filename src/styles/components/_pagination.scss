@@ -1,0 +1,23 @@
+.pagination {
+	@apply flex justify-center;
+	&__wrapper {
+		@apply flex justify-center border border-borderBottomColor w-fit m-0 p-0;
+	}
+}
+
+.page {
+	&-link {
+		@apply py-1 px-2 md:px-4 flex justify-center items-center   text-sm border-l border-borderBottomColor;
+		&-active {
+			@apply text-[#fff] bg-primary;
+		}
+	}
+
+	&__prevLink,
+	&__nextLink {
+		@apply text-primary m-0;
+	}
+	&__prevLink {
+		@apply border-none;
+	}
+}

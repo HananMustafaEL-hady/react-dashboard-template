@@ -7,7 +7,7 @@ export const NavNotifications = () => {
     const { ref: refDrop, isComponentVisible: showDrop, setIsComponentVisible: setShowDrop } = useComponentVisible(false);
 
     return (
-        <div className='relative'>
+        <div className='lg:relative  '>
             <div className='text-link hover:text-primary cursor-pointer text-xl  font-bold ml-4 transition-all duration-[0.15s] ease-in' onClick={() => setShowDrop(!showDrop)} ref={refDrop}><NotificationDropIcon /></div>
             <ul className={`${styles['list']} ${showDrop ? styles['list-show'] : ''}`}>
                 <h3 className='bg-primary text-[#fff] p-4 font-bold '>All Notifications</h3>
