@@ -1,5 +1,5 @@
 .list {
-	@apply absolute rounded-[0.25rem] p-[7px] text-dropdownColor top-[132%] bg-[#fff] min-w-[140px] invisible translate-y-4 opacity-0 transition-all duration-[300ms] ease-linear left-[-70%] sm:left-0;
+	@apply absolute rounded-[0.25rem] p-[7px] text-dropdownColor top-[132%] bg-[#fff] min-w-[140px] invisible translate-y-4 opacity-0 transition-all duration-[300ms] ease-linear left-[-70%] sm:left-0 z-50;
 
 	&-show {
 		@apply visible translate-y-0 opacity-100;

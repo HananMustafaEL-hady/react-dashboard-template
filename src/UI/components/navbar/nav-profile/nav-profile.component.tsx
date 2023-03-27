@@ -16,7 +16,7 @@ export const NavProfile = () => {
                     alt="userImage"
                 />
             </div>
-            <div className="ml-4 relative">
+            <div className="ml-4 relative hidden md:block">
                 <div className=' hidden md:block'>
                     <h4 className={`${styles["profile__name"]}`}>
                         Austin Robertson

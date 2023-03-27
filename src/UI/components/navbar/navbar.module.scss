@@ -1,9 +1,27 @@
 .nav {
-	@apply bg-[#fff] lg:ml-[230px] transition-all duration-[400ms] ease-in px-4 mb-8;
+	@apply bg-[#fff] lg:ml-[230px] transition-all duration-[400ms] ease-in  mb-8;
 	&-closeSide {
 		@apply lg:ml-[4.5rem];
 	}
 	&__logo {
 		@apply w-[26.25px] h-[26.25px];
+	}
+	&__toggler {
+		@apply border border-borderBottomColor px-3 py-1;
+		&-bar {
+			@apply block w-[22px] h-[1px] rounded  bg-bodyColor my-1 transition-all duration-[400ms] ease-in;
+		}
+		&-bar1 {
+			@apply my-0 rotate-45;
+		}
+		&-bar2 {
+			@apply hidden my-0;
+		}
+		&-bar3 {
+			@apply my-0 rotate-[-45deg];
+		}
+		&-icon {
+			@apply flex justify-center items-center  flex-col min-h-[27px];
+		}
 	}
 }

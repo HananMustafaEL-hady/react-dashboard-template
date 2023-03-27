@@ -1,0 +1,7 @@
+.side-menu {
+	box-shadow: 0 0 30px rgba(250, 106, 174, 0.05);
+	@apply transition-all duration-[400ms] ease-in w-[230px] fixed bg-[#fff] h-screen	 justify-center top-0  z-20;
+	&-backdrop {
+		@apply fixed  w-screen h-screen  bg-[#000] opacity-50 z-10 overflow-hidden;
+	}
+}
