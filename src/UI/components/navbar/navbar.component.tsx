@@ -26,8 +26,6 @@ export const Navbar: React.FC<Props> = ({ isClosedNav, setCloseNav }) => {
 	return (
 		<div>
 			<nav className={`${styles['nav']} ${isClosedNav ? styles['nav-closeSide'] : ''}`} id="nav">
-
-
 				<div className="flex items-center justify-between h-16">
 					<div className="lg:flex  w-full hidden ">
 						<div className='flex items-center justify-between w-full'>
