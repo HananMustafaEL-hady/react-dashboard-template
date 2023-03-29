@@ -6,8 +6,7 @@ export const NavSideMenu = () => {
 	return (
 		<div>
 			<div className={`${styles['side-menu']} `}>
-				<NavSideMenuDropdown title={'Home'} dropdownList={[{ title: "item", link: "/menu" }]} icon={<HomeIcon />} />
-
+				<NavSideMenuDropdown title={'Home'} dropdownList={[{ title: "Dashboard", link: "/Dashboard" }, { title: "Analytics", link: "/Analytics" }]} icon={<HomeIcon />} />
 			</div>
 			<div className={`${styles['side-menu-backdrop']} `}></div>
 		</div>

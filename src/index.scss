@@ -18,7 +18,8 @@
 }
 
 #sidebar .active,
-#nav .active {
+#nav .active,
+.active li {
 	@apply bg-primary text-[#fff];
 }
 

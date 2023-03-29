@@ -22,14 +22,16 @@ export const NavSideMenuDropdown: React.FC<Props> = ({ title, dropdownList, icon
             </div>
 
 
-            {/* <ul>
+            <ul className={`${styles['list__dropdown']} ${showCollapse ? styles['list__dropdown-show'] : ''}`}>
                 {dropdownList?.map((item, index) => {
-                    return <li key={index} className={`${styles['list__title__wrapper']}`}>
-                        <NavLink to={`${item?.link}`}>{item.title}</NavLink>
+                    return <NavLink to={`${item?.link}`} key={index} ><li className={`${styles['list__dropdown__link']}`}>
+                        {item.title}
                     </li>
+                    </NavLink>
                 })}
+            </ul>
 
-            </ul> */}
+
         </div>
     )
 }
