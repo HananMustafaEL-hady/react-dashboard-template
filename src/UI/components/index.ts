@@ -4,9 +4,10 @@ export { SidebarDropdown } from './sidebar/sidebar-dropdown/sidebar-dropdown.com
 export { SidebarItem } from './sidebar/sidebar-item/sidebar-item.component';
 export { SidebarListGroup } from './sidebar/sidebar-list-group/sidebar-list-group.component';
 export { NavItem } from './navbar/nav-item/nav-item.component';
-export { NavDropdown } from './navbar/nav-dropdown/nav-dropdown.component'
-export { NavProfile } from "./navbar/nav-profile/nav-profile.component"
-export { NavNotifications } from './navbar/nav-notifications/nav-notifications.component'
-export { NavSearch } from './navbar/nav-search/nav-search.component'
-export { Table } from './table/table.component'
-export { NavSideMenu } from './navbar/nav-side-menu/nav-side-menu.component'
+export { NavDropdown } from './navbar/nav-dropdown/nav-dropdown.component';
+export { NavProfile } from "./navbar/nav-profile/nav-profile.component";
+export { NavNotifications } from './navbar/nav-notifications/nav-notifications.component';
+export { NavSearch } from './navbar/nav-search/nav-search.component';
+export { Table } from './table/table.component';
+export { NavSideMenu } from './navbar/nav-side-menu/nav-side-menu.component';
+export { NavSideMenuDropdown } from './navbar/nav-side-menu/nav-side-menu-dropdown/nav-side-menu-dropdown.component';
