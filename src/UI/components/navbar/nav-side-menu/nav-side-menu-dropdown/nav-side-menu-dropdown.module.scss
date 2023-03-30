@@ -1,21 +1,29 @@
 .list {
 	&__header {
-		@apply rounded text-[14px] font-medium	py-[.5rem] px-[1rem]  hover:text-primary hover:bg-primary/25 mx-0.5 transition-all duration-[.15s] ease-in-out  flex items-center cursor-pointer;
+		@apply rounded text-[14px] font-medium	py-[.5rem] px-[1rem]  hover:text-primary hover:bg-primary/25 mx-0.5 transition-all duration-[.15s] ease-in-out  flex items-center cursor-pointer  mb-2;
 		&-title {
 			@apply ml-2 capitalize;
 		}
 		&-icon {
 			@apply text-[17px];
 		}
+		&-selected {
+			@apply bg-primary/25  text-primary;
+		}
 	}
+	// &__dropdown {
+	// 	margin-inline-start: 1.2rem;
+	// 	@apply invisible translate-y-4 transition-all duration-500 ease-in opacity-0;
+	// 	&-show {
+	// 		@apply visible translate-y-0 opacity-100  py-2;
+	// 	}
+	// }
+
 	&__dropdown {
-		margin-inline-start: 1.2rem;
-		@apply py-2 invisible translate-y-4 transition-all duration-[.2s] ease-in-out opacity-0;
-		&-show {
-			@apply visible translate-y-0 opacity-100;
-		}
-		&__link {
-			@apply py-2 px-[1.5rem]  hover:text-primary hover:bg-primary/25 rounded overflow-hidden duration-[.15s] ease-in-out mb-1;
-		}
+		padding-inline-start: 1.5rem;
+		@apply py-2;
+	}
+	&__wrapper {
+		@apply h-0 overflow-hidden duration-500;
 	}
 }

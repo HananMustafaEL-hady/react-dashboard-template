@@ -11,3 +11,4 @@ export { NavSearch } from './navbar/nav-search/nav-search.component';
 export { Table } from './table/table.component';
 export { NavSideMenu } from './navbar/nav-side-menu/nav-side-menu.component';
 export { NavSideMenuDropdown } from './navbar/nav-side-menu/nav-side-menu-dropdown/nav-side-menu-dropdown.component';
+export { NavSideMenuLink } from './navbar/nav-side-menu/nav-side-menu-dropdown/nav-side-menu-link/nav-side-menu-link.component'
