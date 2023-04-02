@@ -7,7 +7,7 @@ export const NavSearch = () => {
     const { ref: refDrop, isComponentVisible: showDrop, setIsComponentVisible: setShowDrop } = useComponentVisible(false);
 
     return (
-        <div className='relative' ref={refDrop}>
+        <div className='relative ' ref={refDrop}>
             <div className='text-link hover:text-primary cursor-pointer text-xl  font-bold ml-4 transition-all duration-[0.15s] ease-in' onClick={() => setShowDrop(!showDrop)} ><SearchDropIcon /></div>
             <ul className={`${styles['list']} ${showDrop ? styles['list-show'] : ''}`}>
                 <div className='p-4 '>

@@ -1,5 +1,7 @@
 export { default as BitcoinIcon } from "./bitcoin-icon";
+export { default as CalendarIcon } from "./calendar-icon";
 export { default as CloseFullScreenIcon } from "./close-full-screen-icon";
+export { default as CloseIcon } from "./close-icon";
 export { default as DarkModeIcon } from "./dark-mode-icon";
 export { default as DropdownArrowIcon } from "./dropdown-arrow-icon";
 export { default as ElementsIcon } from "./elements-icon";

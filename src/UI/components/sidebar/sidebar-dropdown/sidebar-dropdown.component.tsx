@@ -1,4 +1,4 @@
-import React, { ReactNode, useState } from 'react'
+import React, { ReactNode, useEffect, useRef, useState } from 'react'
 import styles from './sidebar-dropdown.module.scss';
 import { Collapse } from 'react-collapse';
 import { NavLink } from 'react-router-dom';
@@ -15,6 +15,18 @@ interface Props extends React.HTMLProps<HTMLDivElement> {
 }
 export const SidebarDropdown: React.FC<Props> = ({ title, dropdownList, icon, isClosedNav }) => {
     const [showCollapse, setShowCollapse] = useState(false)
+    const [height, setHeight] = useState<string>()
+    const ref = useRef<HTMLUListElement>(null)
+    useEffect(() => {
+        console.log("showCollapse", showCollapse)
+        if (showCollapse) {
+            const height = ref?.current?.clientHeight;
+            setHeight(`${height}px`)
+        } else {
+            setHeight(`0px`)
+        }
+
+    }, [showCollapse])
     return (
         <>
             <div className={`${styles['list__title__wrapper']}`} onClick={() => { setShowCollapse(!showCollapse) }}>
@@ -27,8 +39,8 @@ export const SidebarDropdown: React.FC<Props> = ({ title, dropdownList, icon, is
                 </span>
             </div>
 
-            <Collapse isOpened={showCollapse}>
-                <ul>
+            <div className={`${styles['list__wrapper']}`} style={{ height: height }}  >
+                <ul ref={ref} className={`${styles['list__dropdown']}`}>
                     {dropdownList?.map((item, index) => {
                         return <li key={index} className={`${styles['list__title__wrapper']}`}>
                             <NavLink to={`${item?.link}`}>{isClosedNav ? item.title?.charAt(0).toUpperCase() : item.title}</NavLink>
@@ -36,7 +48,7 @@ export const SidebarDropdown: React.FC<Props> = ({ title, dropdownList, icon, is
                     })}
 
                 </ul>
-            </Collapse>
+            </div>
         </>
     )
 }

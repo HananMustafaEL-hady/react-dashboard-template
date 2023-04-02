@@ -5,6 +5,8 @@ import { Input } from '../common/input/input.component'
 import { Table } from '../components'
 import { StatisticsSection } from '../components/statistics-section/statistics-section.component'
 import axios from "axios"
+import { useForm } from 'react-hook-form';
+import { DatePickerInput } from '../common/date-picker/date-picker.component'
 
 export const HomePage = () => {
 
@@ -12,7 +14,18 @@ export const HomePage = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
-
+  const {
+    control,
+    register,
+    formState: { errors },
+    handleSubmit,
+    getValues,
+    resetField,
+    reset,
+  } = useForm<any>({});
+  const onSubmit = (data: any) => {
+    console.log("data", data)
+  }
   const _renderTableData = (data: any) => {
     console.log("_renderTableData", data)
     return <>
@@ -21,7 +34,6 @@ export const HomePage = () => {
       <div className="table-data">{data?.phone}</div>
       <div className="table-data">{data?.website}</div>
       <div className="table-data">{data?.email}</div>
-
 
     </>
 
@@ -58,7 +70,24 @@ export const HomePage = () => {
         <Input />
         <Input />
         <Input />
-        <div className='flex space-x-10 justify-around '>
+        <form onSubmit={handleSubmit(onSubmit)}>
+          <div className="mb-3">
+            <DatePickerInput
+              id="occasion-date"
+              name="occasionDate"
+              control={control}
+              placeholderText={'placeholder'}
+              reset={resetField}
+              rules={{
+                required: {
+                  value: true,
+                  message: 'single-entity:addOccasionDate',
+                },
+              }}
+            />
+          </div>
+        </form>
+        <div className='flex space-x-10 justify-around'>
           <Button className='btn btn-danger' >
             sell
           </Button>
@@ -74,9 +103,8 @@ export const HomePage = () => {
           <Button className='btn btn-gray ' isLoading>
             login
           </Button>
-
-
         </div>
+
       </Card>
 
 

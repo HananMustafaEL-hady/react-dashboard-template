@@ -1,0 +1,73 @@
+.app-date-picker {
+	@apply block w-full rounded border border-borderBottomColor h-[40px] p-4 text-sm;
+
+	&__popper {
+		@apply min-w-[350px];
+	}
+
+	&__wrapper {
+		@apply relative;
+	}
+
+	&__icon {
+		@apply absolute w-[20px] h-[30px] text-xl	 text-primary  translate-y-[-50%] text-center flex justify-center items-center;
+	}
+
+	&__icon-calender {
+		@apply pointer-events-none;
+		inset-inline-end: 0.44rem;
+		inset-block-start: 50%;
+	}
+
+	&__icon-close {
+		@apply text-[.8rem] cursor-pointer border-none p-0 bg-none;
+		inset-inline-end: 2rem;
+		inset-block-start: 50%;
+	}
+}
+
+.react-datepicker {
+	width: 100%;
+	border-radius: 0.5rem;
+	border: none;
+	$box-shadow: 0px 4px 20px rgba(213, 213, 213, 0.5);
+
+	&__label {
+		@apply text-secondary text-base mb-3 cursor-pointer;
+	}
+
+	&__header {
+		background-color: #fff !important;
+		border-bottom: 1px solid gray;
+		padding-bottom: 0.8rem;
+	}
+
+	&__navigation {
+		@apply top-[8px];
+	}
+
+	&__day {
+		@apply text-primary;
+		width: calc(70% / 7);
+	}
+
+	&__day-name {
+		color: gray !important;
+		width: calc(70% / 7);
+	}
+
+	&__day--keyboard-selected,
+	&__day--selected {
+		@apply text-[#fff] bg-primary hover:bg-primary/25;
+		background-color: #fa6aae !important;
+		color: #fff !important;
+	}
+
+	&__month-container {
+		@apply w-full;
+	}
+
+	&__triangle {
+		@apply hidden;
+	}
+}
