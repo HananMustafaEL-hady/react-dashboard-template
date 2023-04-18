@@ -26,16 +26,15 @@ export const Navbar: React.FC<Props> = ({ isClosedNav, setCloseNav }) => {
 	return (
 		<div>
 			<nav
-				className={`${styles['nav']} ${
-					isClosedNav ? styles['nav-closeSide'] : ''
-				}`}
+				className={`${styles['nav']} ${isClosedNav ? styles['nav-closeSide'] : ''
+					}`}
 				id="nav"
 			>
 				<div className="flex items-center justify-between h-16">
 					<div className="lg:flex  w-full hidden ">
 						<div className="flex items-center justify-between w-full">
 							<div className=" flex items-center ">
-								<h3 className="mb-0 mx-1 pr-3 text-[10px] border-r border-borderBottomColor">
+								<h3 className="mb-0 mx-6 pr-3 text-[10px] border-r border-borderBottomColor">
 									Home
 								</h3>
 								<NavItem
@@ -78,25 +77,22 @@ export const Navbar: React.FC<Props> = ({ isClosedNav, setCloseNav }) => {
 						>
 							<span className={`${styles['nav__toggler-icon']}`}>
 								<span
-									className={`${styles['nav__toggler-bar']} ${
-										isOpen
-											? styles['nav__toggler-bar1']
-											: ''
-									}`}
+									className={`${styles['nav__toggler-bar']} ${isOpen
+										? styles['nav__toggler-bar1']
+										: ''
+										}`}
 								></span>
 								<span
-									className={`${styles['nav__toggler-bar']} ${
-										isOpen
-											? styles['nav__toggler-bar2']
-											: ''
-									} `}
+									className={`${styles['nav__toggler-bar']} ${isOpen
+										? styles['nav__toggler-bar2']
+										: ''
+										} `}
 								></span>
 								<span
-									className={`${styles['nav__toggler-bar']} ${
-										isOpen
-											? styles['nav__toggler-bar3']
-											: ''
-									}`}
+									className={`${styles['nav__toggler-bar']} ${isOpen
+										? styles['nav__toggler-bar3']
+										: ''
+										}`}
 								></span>
 							</span>
 						</button>

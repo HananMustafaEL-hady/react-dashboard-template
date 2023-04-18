@@ -17,3 +17,11 @@
 		transform: rotate(360deg);
 	}
 }
+
+.layout-container {
+	@apply lg:ml-[235px] px-4 flex flex-col  transition-all duration-[400ms] ease-in;
+
+	&__close {
+		@apply lg:ml-[80px];
+	}
+}

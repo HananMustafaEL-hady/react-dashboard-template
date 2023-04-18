@@ -14,7 +14,7 @@
 	}
 	&__toggle {
 		box-shadow: 0 0.125rem 0.25rem rgb(112 22 208 / 10%);
-		@apply absolute top-[16px] right-[-12px] cursor-pointer bg-primary text-[#fff] p-2 rounded-3xl w-fit;
+		@apply absolute top-[18px] right-[4px] cursor-pointer bg-primary text-[#fff] p-2 rounded-3xl w-fit;
 
 		&-open {
 			@apply rotate-180;

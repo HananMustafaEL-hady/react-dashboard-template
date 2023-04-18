@@ -63,7 +63,7 @@ export const HomePage = () => {
   };
   console.log("data", data)
   return (
-    <main className='lg:ml-[225px] px-4 flex flex-col '>
+    <>
       <StatisticsSection />
       <Card title={'Quick Trade'} >
         <Input />
@@ -116,6 +116,6 @@ export const HomePage = () => {
           totalCount: 10,
         }} hasPagination={true} _setPageChange={_setPageChange} currentPage={currentPage} />
       </Card>
-    </main>
+    </>
   )
 }

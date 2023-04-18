@@ -2,7 +2,7 @@ import React, { ReactNode, useEffect, useRef, useState } from 'react'
 import styles from './sidebar-dropdown.module.scss';
 import { Collapse } from 'react-collapse';
 import { NavLink } from 'react-router-dom';
-import { DropdownArrowIcon } from '../../../icons';
+import { DotIcon, DropdownArrowIcon } from '../../../icons';
 
 interface Props extends React.HTMLProps<HTMLDivElement> {
     title: string;
@@ -42,9 +42,13 @@ export const SidebarDropdown: React.FC<Props> = ({ title, dropdownList, icon, is
             <div className={`${styles['list__wrapper']}`} style={{ height: height }}  >
                 <ul ref={ref} className={`${styles['list__dropdown']}`}>
                     {dropdownList?.map((item, index) => {
-                        return <li key={index} className={`${styles['list__title__wrapper']}`}>
-                            <NavLink to={`${item?.link}`}>{isClosedNav ? item.title?.charAt(0).toUpperCase() : item.title}</NavLink>
-                        </li>
+                        return <li key={index} className={`${styles['list__item']} ${isClosedNav ? styles['list__item-close'] : ''}`}>
+                            <NavLink to={`${item?.link}`} className={`${styles['list__item-link']} ${isClosedNav ? styles['list__item-link-close'] : ''}`}>
+                                <span className={`text-[10px] ${isClosedNav ? "hidden" : ""}`}>
+                                    <DotIcon />
+                                </span>
+                                <span className='ml-3 capitalize'>{isClosedNav ? item.title?.charAt(0).toUpperCase() : item.title}</span>
+                            </NavLink></li>
                     })}
 
                 </ul>

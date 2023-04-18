@@ -14,11 +14,11 @@ function App() {
 
 			<Navbar isClosedNav={isClosedNav} setCloseNav={setCloseNav} />
 			<Sidebar isClosedNav={isClosedNav} setCloseNav={setCloseNav} />
-
-			<Routes>
-				<Route path='/' element={< HomePage />}></Route>
-
-			</Routes>
+			<main className={`layout-container ${isClosedNav ? "layout-container__close" : ""}`}>
+				<Routes>
+					<Route path='/' element={< HomePage />}></Route>
+				</Routes>
+			</main>
 		</div>
 	);
 }

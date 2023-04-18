@@ -1,11 +1,11 @@
 .link {
-	@apply flex items-center mx-[1rem] px-[1rem] py-[.5rem]  text-bodyColor mt-2 capitalize text-sm  font-normal leading-[21px] hover:bg-primary/25 rounded-[.25rem]  transition-all duration-[400ms] ease-in;
+	@apply flex items-center mx-[1rem] px-[1rem] py-[.5rem]  text-bodyColor  capitalize text-sm  font-normal leading-[21px] hover:bg-primary/25 rounded-[.25rem]  transition-all duration-[400ms] ease-in;
 
 	&__icon {
-		@apply w-[17px] h-[17px];
+		@apply w-[17px] h-[17px] text-[17px];
 	}
 	&__text {
-		@apply ml-[1rem] opacity-100 transition-all duration-[400ms] ease-in fixed left-[45px];
+		@apply ml-[1rem] opacity-100 transition-all duration-[400ms] ease-in sticky left-[45px];
 		&-close {
 			@apply opacity-0;
 		}
